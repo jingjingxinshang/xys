@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width">
+	<style type="text/css">
+		@media screen and (max-width:1140px){
+
+			.wrap img{
+				transform:scale(0.8);
+				margin-left:5%; 
+			}
+			.content #content_top .p{
+	 			font-size: 50px;
+	 			line-height: 50px;
+	 			padding-bottom:20px; 
+	 		}
+ 
+		}
+		@media screen and (max-width:600px){
+			body{
+				width: 115%;
+			}
+			.content #content_top .p{
+	 			font-size: 25px;
+	 			line-height: 40px;
+	 			padding-bottom:20px; 
+	 		}
+	 		
+	 		.content #allbox .box  {
+	 			margin-top: 10px;
+
+	 		}
+	 		.content #allbox .box h3{
+	 			font-size: 14px;
+
+	 		}
+	 		.content .body_bottom ul{
+	 			 flex-wrap: wrap;
+
+	 		}
+	 		.content .body_bottom ul li{
+	 			width: 49%;	
+	 			
+	 		}
+	 		.content .body_bottom ul li img {
+	 			display: block;
+	 			margin-left: 35%;
+	 		}
+	 	 
+				.content .body_bottom{
+			 	 
+				margin-left: 1%;
+				}
+	 	 
+		}
+		@media screen and (max-width: 780px){
+			 
+			.content .body_bottom .redp span {
+				display: block;
+				font-size: 13px;
+				margin-left: 8%;
+			}
+			.content .body_bottom .redp{
+			 
+				margin-bottom: 3%;
+			}
+		}
+		@media screen and (max-width: 1000px){
+			.content #allbox .box h3{
+	 			font-size: 16px;
+
+	 		}
+	 	 
+				.body .head{
+					width: 98%;
+					margin-top: 1px; 
+				}
+				body .bodytiao{
+					width: 98%;
+					margin-left: 1%; 
+
+				}
+				.head .wrap{
+					flex-direction:column;
+					width: 100%;			
+				}
+				.head .wrap img{
+					transform:scale(0.6);
+			  		top: 3px;
+				}
+				.head .wrap ul{
+					width: 100%;
+				}
+				#allbox .box{
+	 			width: 100%;
+	 			 height: 20%;
+
+	 		}
+	 		#allbox .box a{
+	 			margin-top: 2%;
+	 			margin-bottom: 1%;
+	 		}
+	 		 #allbox .box p{
+				font-size: 13px;
+	 		}
+	 		#content_top .p{
+	 			font-size: 35px;
+	 			line-height: 60px;
+	 			padding-bottom:20px; 
+	 		}
+ 			.content #content_top{
+ 				width: 88%;
+ 			}
+ 			.content #allbox{
+ 				width: 88%;
+
+ 			}
+ 			.content #content_top .p2{
+ 				font-size: 16px;
+ 			}
+ 			#bottom p{
+ 				font-size: 13px;
+ 			}
+ 			#bottom h2{
+ 				font-size: 16px;
+ 			}
+ 		.content #bottom{
+ 				width: 85%;
+ 			}
+ 			.content .body_bottom .red {
+ 					width: 200px;
+					height: 41px;
+ 			}
+ 			.content .body_bottom .doublep p {
+ 				width: 100%;
+ 				font-size: 16px;
+ 				white-space: nowrap;
+ 			}
+ 			.content .body_bottom .doublep {
+					display: inline-block;
+
+				}
+ 
+				.content .body_bottom{
+			 	 
+				margin-bottom: 1%;
+				}
+			
+
+		}
+
+
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.body{
+		display: flex;
+		top: 5px;
+		position: relative;
+		justify-content: center;
+		font-family: "微软雅黑";
+	}
+		.head{
+			width: 99.3%;
+			background: rgba(154, 21, 53,1);
+			display: flex;
+			justify-content: center;
+		}
+		.wrap{
+
+			width: 88%;
+			height: 100%;
+			display: flex;
+			justify-content:space-between;
+			align-items: center;
+		}
+		.wrap img{
+
+				position: relative;
+				width: 300px;
+				height: 51px;
+				top: -7px;
+				margin-left:9%; 
+			}
+
+		.head ul{	
+			width: 55%;
+			margin-bottom:10px ;
+
+		}
+		.head ul li {
+			float: left;
+			list-style: none;
+			margin: 0;
+			padding: 0; 
+
+			width: 33.2%;
+			line-height: 50px;
+			text-align: center;
+			color: white;
+			
+		}
+		.head ul li a{
+			display: block;
+			width: 100%;
+			height: 100%;
+				color: white;
+				text-decoration: none;
+		}
+
+		.head ul li a:hover {
+			background: rgba(192, 50, 56,1);
+		}
+		.head ul li:nth-child(odd){
+			background: rgba(187, 12, 54,1);
+		}
+		.head ul li:nth-child(even){
+			background: rgba(179, 14, 54,1);
+		}
+		.bodytiao{
+			width: 99.3%;
+			height: 10px;
+			background: lightgray;
+			margin:0.35%; 
+			margin-top: 10px;
+		}
+		.content{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+		#content_top{
+ 			width: 65%;
+			 
+			margin-bottom:20px; 
+			height: 20%;
+		}
+		.h4{
+			margin-top:10px; 
+			font-weight: normal;
+			font-family: "微软雅黑";
+		}
+		p{
+			width: 90%;
+
+		}
+		.p{
+			font-size: 72px;
+			line-height: 100px;
+
+		}
+		.p2{
+			font-size: 20px;
+			line-height: 30px;
+		}
+		.p3{
+			line-height: 30px;
+			font-size: 14px;
+		}
+		.span{
+			color: darkred;
+			text-decoration: underline;
+		}
+		#content_top:after{
+			content: '';
+			width: 40px;
+			height: 7px;
+			background: rgba(243, 240, 244,1);
+			display: block;
+			position: absolute;
+
+			left: 44%;
+
+		　}
+ 		#allbox{
+ 			width: 65%;
+ 		 
+ 			flex-shrink: 1;
+ 	 
+ 			display: flex;
+ 			flex-wrap:wrap;
+ 			margin-bottom:30px;
+ 		}
+ 		.box{
+ 			width: 50%;
+ 			height: 50%;
+ 		}
+ 		.box h3{
+ 			font-weight: normal;
+ 		}                                                                               
+ 		.box a{
+ 			display: flex;
+ 			width: 188px;
+ 			padding: 10px;
+
+ 			 justify-content: center;
+ 			 align-self: center;
+ 			border-radius:20px;
+ 			text-decoration: none;
+ 			color: black;
+ 			font-size: 14px;
+ 			border: 3px rgba(238, 235, 240,1) solid;
+ 			 box-shadow: 0 0 0px 3px white inset;
+ 			background-image:linear-gradient(0deg,rgb(238, 235, 240) 0% , rgb(238, 235, 240) 50%, rgb(248, 247, 249) 50%, rgb(248, 247, 249) 100%)  ;
+ 			 
+ 			text-align: center;
+ 		}  
+
+ 		#allbox p{
+ 			line-height: 28px;
+ 			min-height:20px;
+ 			font-size: 14px;
+ 		}  
+ 		#allbox a{
+ 			margin:3px 0 3px 0; 
+ 			font-size: 13px;
+ 		}
+ 		#bottom{
+ 			margin-right: 2%;
+ 			width: 60%;
+		 
+			position: relative;
+			border: 6px solid rgba(243, 240, 244,1);
+			padding: 15px;
+
+ 		}
+
+ 		#bottom img{
+ 			position: relative;
+		 	  float: right; 
+		 	  border-radius:10px;
+		 	  margin-right: 1.3%;
+		 	  padding-left: 1.3%;
+
+ 		}
+ 		#bottom h2{
+ 			font-weight: normal;
+ 			line-height: 20px;
+ 		}
+ 		#bottom p {
+ 			line-height: 20px;
+ 			font-size: 14px;
+ 		}
+
+
+
+
+
+
+.body_bottom{
+	border-top: rgba(230, 227, 231,1) 10px solid; 
+	box-shadow:0 5px 0 0px white inset;
+background: rgba(186, 13, 55,1);
+width: 99.3%;
+margin-bottom: 0.4%;
+ text-align: center;
+
+}
+.body_bottom,.body_bottom a{
+	color: white;
+}
+
+.body_bottom h1{
+	font-weight: normal;
+	margin-bottom: 1%;
+}
+
+.body_bottom .red{
+ 
+position: relative;
+	text-decoration: none;
+ display:inline-flex;
+	width: 230px;
+	height: 44px;
+	border-radius:25px;
+	
+	color: white;
+	align-items: center;
+	justify-content: center;
+	 border: 3px rgba(149, 10, 44,1) solid;
+
+	box-shadow: 0 0 0px 3px rgba(206, 68, 66,1) inset;
+ 			background-image:linear-gradient(0deg,rgb(173, 23, 50) 0% , rgb(173, 23, 50) 50%, rgb(189, 25, 55) 50%, rgb(189, 25, 55) 100%)  ;
+}
+.body_bottom .doublep {
+	display: inline-flex;
+ 
+}
+.body_bottom .doublep p{
+	width: 39%;
+	font-size: 20px;
+	 
+}
+ .body_bottom .doublep .ass{
+ 		flex-basis: 5%;
+ }
+.body_bottom ul {
+ 
+	border-top: 4px solid rgba(204, 60, 58,1);
+	width: 50%;
+	display: inline-flex;	
+ }
+.body_bottom ul li {
+	padding-top:5%; 
+	padding-bottom:5%; 
+	width: 25%;
+ 	list-style: none;  
+ 	display: block;
+ }
+.body_bottom ul li img{
+	 
+}
+.body_bottom ul li a{
+ 	position: relative;
+ 	top: -10%;
+ 	left: 5%;
+	text-decoration:none;
+	display: inline-block; 
+	
+}
+ 
+.box a:hover {
+	border-color: rgba(230, 227, 231,1);
+}
+.body_bottom a:hover{
+	color: rgba(237, 194, 205,1);
+}
+
+	</style>
+</head>
+<body>
+<div class="body"> 
+	<div class="head">
+		<div class="wrap">
+			<img src="img/1.png"  />
+			<ul>
+				<li><a href="#">Design</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Training</a></li>
+				<li><a href="#">podcast</a></li>
+				<li><a href="#">cocntact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="bodytiao"></div>
+<div class="content">
+	<div id="content_top">
+		<h4 class="h4">WEBSITE DESIGN TRAINING</h4>
+		<p class="p">Popular workshops</p>
+		<p class="p2">Learn up-to-date digital design methods and technologies from Andy Clarke, one of the UK’s best-known web designers.</p><br>
+		<p class="p3">We help businesses, charities and organisations to improve their digital design workflows, help designers and developers work together and ultimately provide a better experience for customers. Choose one of our popular workshops or <span class="span">contact us</span> and we’ll design a training plan just for your team.</p><br>
+		 
+	</div>
+</div>
+				<br>	
+
+<div class="content">
+		<div id="allbox">
+				<div class="box">
+					<h3>MAKING A LIVING STYLE GUIDE</h3>
+					<p>Learn to make, use and maintain a Living Style Guide or front-end pattern library to maintain consistency across design projects and improve collaboration.</p>
+					<a href="#">More about this workshop</a>
+				</div>
+				<div class="box">
+					<h3>USING CSS FOR RESPONSIVE WEB DESIGN</h3>
+					<p >Learn to create cross-browser layouts using Flexbox, improve typography with Multi-column Layout and style using border images, blend modes and filters.</p>
+					<a href="#">More about this workshop</a>
+				</div>	
+
+				<div class="box">
+					<h3>DESIGNING WITH A BROWSER</h3>
+					<p>Learn how designing with a browser can help improve digital design projects utilising HTML and CSS throughout the design process.</p>
+					<a href="#">More about this workshop</a>
+				</div>
+				<div class="box">
+					<h3>DESIGNING FLEXIBLE GRIDS AND RESPONSIVE TYPOGRAPHY</h3>
+					<p>Learn to design grids that respond better across screen sizes plus distinctive, expressive typography that improves someone’s reading experience on any type of device.</p>
+					<a href="#">More about this workshop</a>
+				</div>
+	 
+		</div>
+</div>
+<div class="content">
+	<div id="bottom">
+	 <h2>WHO LEADS OUR TRAINING?</h2><br>
+	<img src="img/2.jpg" width="120px" height="120px">
+
+	 <p>Stuff & Nonsense is one of the UK’s best known web design studios and is directed by Andy Clarke. Andy has over twenty years experience designing for the web. He’s worked with clients including Disney Store, ISO, WIPO and WWF UK.</p><br>
+		 <p>
+		 	Andy’s an accomplished speaker and a teacher, published author who has written three widely acclaimed books about designing for the web, including Transcending CSS (2005,) Hardboiled Web Design (2010) and Hardboiled Web Design Fifth Anniversary Edition (2015.) He’s given over sixty presentations about design and digital design workflow at conferences all around the world since 2005.
+		 </p>
+	 </div>
+</div>
+<br>
+<br>
+<div class="content">
+	<div class="body_bottom">
+	<br><br>
+		<h1>Let's design something fabulous together</h1>
+
+		<a href="#" class="red">Get started,contact us</a>
+<br><br>
+		<div class="doublep"> 
+			<p>Have you an interesting website design challenge for us?</p>
+					<p class="ass"></p>
+			<p>Call 01745 851848, tweet or email us</p>
+		</div>
+		<br><br>
+		<ul>
+			<li><img src="img/11.png"><a href="#">Dribbble</a></li>
+			<li><img src="img/12.png"><a href="#">Instagram</a></li>
+			<li><img src="img/13.png"><a href="#">Linkedin</a></li>
+			<li><img src="img/14.png"><a href="#">Twitter&nbsp;</a></li>
+		</ul>
+		<p class="redp"><span>Design and content © Stuff & Nonsense Ltd. </span><span>All rights reserved.</span><span> Company number 03687563.</span><span> VAT No. 728–7958–71</span></p>
+
+		<p class="redp"><span>OpTIC, Ffordd William Morgan,</span> <span>St. Asaph Business Park,</span> <span>St. Asaph,</span> <span>Denbighshire,</span><span> North Wales, </span><span>LL17 0JD</span></p>
+		<a href="#">Articles</a>
+		<a href="#">Books</a>
+		<a href="#">Speaking</a>
+		<a href="#">Training</a>
+<br>
+<br>
+		<a href="#">Ethical statement</a>
+	</div>
+</div>
+</body>
+</html>
